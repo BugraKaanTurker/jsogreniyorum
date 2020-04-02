@@ -1,1 +1,1 @@
-![lab2 - Gif ](outputs/javaogreniyorum.gif)
+![lab2 - Gif ](outputs/jsogreniyorum.gif)
