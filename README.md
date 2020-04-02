@@ -1,2 +1,1 @@
-# lab4
- lab4 ödevi
+![lab2 - Gif ](outputs/jsogreniyorum.gif)
