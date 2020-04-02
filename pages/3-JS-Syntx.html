@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>Olaylar (Events</h3> 
+    
+            <div id="sekmeler">
+
+                    <a href="1-Anasayfa.html">Anasayfa</a>
+                    <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                    <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                    <a href="4-Degiskenler.html">Değişkenler</a>
+                    <a href="5-Operatörler.html">Operatörler</a>
+                    <a href="6-Aritmetik.html">Aritmetik</a>
+                    <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                    <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                    <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                    <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                    <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                    <a href="12-Döngüler.html">Döngüler</a>
+                    <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                    <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+
+
+                </div>
+        </header>
+        <main>
+
+
+
+ <p id="ortayer">
+              
+               <bold>Javascript Yazım Kuralları</bold>
+               
+        
+            Browser’ların Javascript yorumlama bölümleri, kodların arasında yer alan yorum ifadeleri ile boşlukları atar; geri kalan kelimeleri beşe ayırarak ele alırlar:<br><br>
+            1. Belirleyiciler (Identifier):<br><br>
+            Javascript dilinin değişkenleri, metodları ve nesnelerini belirleyen isimlere Belirleyiciler denir. Bu sınıfa giren bütün kelimeler ya harfle ya da alt çizgi (_) ile başlar.<br><br> Rakam veya diğer işaretler birinci karakter olarak kullanılamaz, fakat daha sonra kullanılabilir.<br><br> Javascript, aynı kelimenin büyük harfle yazılanı ile küçük harfle yazılanını farklı isimler olarak görür.<br><br> Bu sınıfta giren kelimelerin içinde boşluk olamaz.<br><br>
+            Javascript kodlarınız sizin bilgisayarınızda değil, ziyaretçinin bilgisayarında çalıştırılacağına göre, kullandığınız karakterlerin ziyaretçinin bilgisayarında nasıl bir değer taşıyacağını düşünmeniz gerekir. Bu bakımdan güvenli yol, Bu sınıfa giren kelimelerde, İngilizce alfabede bulunmayan, Türkçe ve diğer dillerdeki high-ASCII karakterleri (ı, İ, ğ, Ğ, Ş, Ş ile ü, Ü, ö, Ö, ç ve Ç) kullanmamaktır.
+            Aşağıda doğru ve yanlış belirleyici kelime örneklerini bulacaksınız:<br><br>
+            Doğru		Yanlış
+            sonucgoster		sonuc goster
+            ikincidegisken		2ncidegisken
+            _gelen		#gelen
+            Anahtar kelime grubundaki kelimeler de bu sınıfta kullanılamaz.<br><br>
+            2. Anahtar Kelimeler (Keyword):<br><br>
+            Javascript dilinin önceden tanımlanmış ve programın yorumunda özel anlam kazandırılmış kelimelerine Anahtar Kelime denilir.<br><br> Aşağıda bu kelimelerin yanında kelime anlamlarını göreceksiniz; fakat ilerledikçe bu kelimelerin Javascript’te kullanıldıkları yere göre anlamlarını ve nerelerde kullanıldıklarını göreceğiz.
+            ////////////QUARK İÇİN NOT////////////////
+            Kelime listelerini Word içinde sütun haline getirdim. Böylece Quark’a giderse alfabetik sıra bozulabilir. Word’de iken kelime listesini sütun’dan çıkartmak gerekir.<br><br>
+            ////////////////QUARK NOTU BİTTİ////////////////////
+            Javascript 1.0’deki anahtar kelimeler:
+
+
+           <br><br>
+            break (kes)<br><br>
+            continue (devam et)<br><br>
+            else (başka bir durum)<br><br>
+            false (yanlış)<br><br>
+            for (için)<br><br>
+            function (işlev)<br><br>
+            if (eğer)<br><br>
+            in (içinde)<br><br>
+            int (integer, tam sayı)<br><br>
+            new (yeni)<br><br>
+            null (boş değer)<br><br>
+            return (dön)<br><br>
+            this (bu)<br><br>
+            true (doğru)<br><br>
+            var (variable, değişken)<br><br>
+            while (... iken)<br><br>
+            with (ile)<br><br>
+
+            
+            Javascript 1.i ile eklenen anahtar kelimeler:<br><br>
+            typeof (türü)<br><br>
+            void (geçersiz)<br><br>
+            Javascript 1.2 ile eklenen anahtar kelimeler:<br><br>
+            do (yap)<br><br>
+            labeled (etiketli)<br><br>
+            switch (değiştir)<br><br>
+            3. Ayrılmış Kelimeler (Reserved):<br><br>
+            İkinci gruba girsin-girmesin bazı kelimeler, ilerde Javascript programlama ve yorumlama işlerinde kullanılabileceği düşüncesi ile, bir kenara ayrılmıştır; Javascript kodlarında kullanılamazlar.<br><br> Bu listede yer alan ve halen Anahtar Kelime listesine girmiş bir kelime değişken, fonksiyon, nesne veya metod adı olarak kullanılırsa, program hata verir; henüz anahtar kelime listesine alınmamış olmakla birlikte “rezerv edilmiş” bu kelimelerin geçtiği komut satırı ise görmezden gelinir.<br><br> Javascript programlarınızda kullanmayacağınız kelimelerin listesi şöyledir:<br><br>
+
+
+            JAVASCRIPT		11
+            abstract (soyut)
+            boolean (Boolean Mantığı)
+            break (kes)
+            byte (bayt)
+            case (hal)
+            catch (yakala)
+            char (karakter)
+            class (sınıf)
+            const (sabit)
+            continue (devam)
+            default (varsayılan)
+            delete (sil)
+            do (yap)
+            double (çift)
+            else (başka bir durum)
+            extends (uzanır)
+            false (yanlış)
+            final (sonuncu)
+            finally (sonunda)
+            float (kesirli)
+            for (için)
+            function (işlev)
+            goto (--ya git)
+            if (eğer)
+            implements (uygular)
+            import (ithal et)
+            in (içinde)
+            instanceof (--nın oluşumu)
+            int (integer, tam sayı)
+            interface (arayüz)
+            labed (etiketli)
+            long (uzun)
+            native (kendinden olan)
+            new (yeni)
+            null (boş değer)
+            package (paket)
+            private (özel)
+            protected (korunmuş)
+            public (genel)
+            return (dön)
+            short (kısa)
+            static (sabit)
+            super (kuvvet)
+            switch (değiştir)
+            synchronized (uyumlu)
+            this (bu)
+            throw (içine kat)
+            throws (içine katar)
+            transient (geçici)
+            true (doğru)
+            try (dene)
+            typeof (türü)
+            var (değişken)
+            void (geçersiz)
+            while (iken)
+            with (ile)
+
+            JAVASCRIPT		11
+            4. Değerler (Literal):
+            Javascript kodu icra edildiği sırada değişmeyen rakam veya metinlere Değer denir. Javascript kodlarında beş tür değer bulunur:
+            a. Tamsayı Değerler (Integer Literal):
+            Tamsayılar, 10 tabanlı (ondalık, decimal), 8 tabanlı (octal) veya 16 tabanlı (hexadecimal) olabilir. 8 tabanlı sayıları belli etmek için sayıdan önce sıfır, 16 tabanlı sayıları belli etmek için sıfır ve x harfi kullanılır. Hexadecimal sayılarda 9’dan büyük sayılar A, B, C, D, E ve F harfleri ile yazılır. (Sayının basamaklarını okuma kolaylığı sağlamak için, nokta değil, virgül ile ayırmalısınız.) Örnek: Decimal 46,789; Octal 072,7898; Hexadecimal: 0x7B8.
+            b. Kesirli Değerler (Floating-point literal):
+            Tam sayı bölümünü bir ondalık nokta (virgül değil) ile kesir bölümü izleyen sayılar. Örnek: 3987.786, -1.1.
+            c. Boolean Mantık İfadeleri (Boolean Literal):
+            Javascript dilinde, Boolean Mantığı, iki sonuç verir: True (Doğru) ve False (Yanlış). Javascript, True (Doğru) değerini 1, False (Yanlış) değerini 0 rakamıyla tutar. Bir denklemin sonucunun doğru veya yanlış olduğunu irdelerken, Javascript metninde bu iki kelime küçük harfle yazılmalıdır. Dolayısıyla büyük harfle yazılmış TRUE ve FALSE kelimeleri, değişken, fonksiyon, nesne ve metod adı olarak kullanılabilir. Tabii, bir süre sonra kafanız karışmazsa!
+            d. Alfanümerik (Karakter) Değerler (String literal):
+            İki adet çift-tırnak (“) veya tek-tırnak (‘) içine alınan her türlü ifade, Javascript için String değeridir. (Çeşitli Türkçe bilgisayar kaynaklarında “String literal” terimi “karakter değişken” olarak belirtilmektedir. “Karakter” bu değerlerin örneğin sayı değerlerden farkını anlatmıyor. Bazı kaynaklarda ise hem rakam, hem de harf içerdikleri, buna karşılık sayı olmadıkları gerçeğini belirtmek amacıyla, daha aşina olduğumuz alfanümerik terimini görmek mümkün. Ben bu ikincisini benimsiyorum.) Bir Javascript metninde alfanümerik değerleri bir tek tırnakla, bir çift tırnakla gösteremezsiniz. Başta nasıl başladıysanız, programın sonuna kadar bütün alfanümerik değerleri aynı tür tırnak içinde göstermelisiniz. Alfanümerik değer olarak verdiğiniz karakterler, daha sonra bir HTML sayfada bir nesnenin bir unsurunun değeri (örneğin bir TEXTAREA’nın içeriği) olarak kullanılacaksa ve HTML sayfa, meta etiketlerinde kendisinin Türkçe olarak yorumlanmasını sağlayacak ifadeye sahipse, Türkçe karakter ve diğer yüksek ASCII kodlardaki karakterleri içerebilir. Örnekler: “Bugün hava çok güzel” ‘Bugün hava güzel değil’ “123 adet yumurta” ’23,234,678.987’
+            e. Özel Karakterler
+            Özellikle alfanümerik değerleri verirken, Browser’a metin görüntüleme konusunda biçim veya hareket komutları da vermek isteyebilirsiniz. Bunu, bazı kod harflerin önüne ters-bölü işareti koyarak yapabilirsiniz. Bu tür özel karakterler şunlardır:
+            \b - Klavyede Geri (backspace) tuşunun görevini yaptırır.
+            \f - Yazıcıya sayfayı bitirmeden çıkarttırır (formfeed).
+            \n - Yazı imlecini yeni bir satırın başına getirir (new line)
+            \r - Klavyede Enter-Return tuşunun görevini yaptırır.
+            \t - Sekme (tab) işaretini koydurur.
+            \\ - Yazıya ters-bölü işareti koydurur.
+            \’ - Yazıya tek-tırnak işareti koydurur.
+            \” - Yazıya çift-tırnak işareti koydurur.
+            Javascript’e bu tür özel karakterlerle HTML sayfasına bir metin yazdıracağınız zaman, bu yazının PRE../PRE etiketleri arasında olması gerekir. Aksi taktirde Javascript ne yazdırırsa yazdırsın, HTML bu özel karakterleri dikkate almayacaktır.
+            JAVASCRIPT		11
+                 
+                 
+            </p>
+             
+            
+                
+        </main>
+           
+           
+            <footer>
+                <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+            </footer>
+    
+</body>
+
+</html>
+

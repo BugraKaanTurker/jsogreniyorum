@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>Olaylar (Events</h3> 
+    
+            <div id="sekmeler">
+
+                    <a href="1-Anasayfa.html">Anasayfa</a>
+                    <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                    <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                    <a href="4-Degiskenler.html">Değişkenler</a>
+                    <a href="5-Operatörler.html">Operatörler</a>
+                    <a href="6-Aritmetik.html">Aritmetik</a>
+                    <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                    <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                    <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                    <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                    <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                    <a href="12-Döngüler.html">Döngüler</a>
+                    <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                    <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+
+
+                </div>
+        </header>
+        <main>
+
+
+
+ <p id="ortayer">
+              
+               <bold>JavaScript’in özellikleri</bold>
+               
+              JavaScript String
+              <br><br>
+
+ 
+JavaScript string veri türü, metinleri saklamak ve üzerinde işlem yapmak için kullanılır<br><br>.
+
+JavaScript String Veri Türü<br><br>
+Bir JavaScript string, basitçe bir grup karakteri saklamaya yarar. "Ali", "Ali Veli", "Bu bir web sitesidir", "sezon11" birer string örnekleridir.
+<br><br>
+Bir string türündeki bir değişkene değer atarken string ifade tırnak içinde yazılmalıdır.
+<br><br>
+Bu tırnak işareti tek veya çift olabilir.<br><br>
+
+Örnek<br><br>
+//çift tırnak<br><br>
+var adsoyad ="Ali Veli";<br><br>
+
+//veya tek tırnak ile<br><br>
+var adsoyad ='Ali Veli';<br><br>
+
+ 
+Bir string değişkene değer atarken, metnin içinde tek tırnak veya çift tırnak olmadığı müddetçe istediğiniz uzunlukta veri girebilirsiniz.<br><br>
+Eğer metin içinde  string yapısını bozacak tek tırnak veya çift tırnak varsa buna özel önlem almanız gerekir.
+<br><br>
+Bir metinde string yapısını bozacak tek tırnak veya çift tırnak varsa o zaman JavaScript kaçış işaretini kullanmalısınız.
+<br><br>
+Kaçış işareti \ işaretidir.
+<br><br>
+Örnek<br><br>
+var hikaye ="Kurt kırmızı başlıklı kıza:\"Nereye gidiyorsun? Küçük kız \" demiş";
+
+<br><br>
+ 
+String Length (Stringin uzunluğu)<br><br>
+String yerleşik olarak bazı özelliklere sahiptir. length bunlardan biridir ve stringin uzunluğunu verir.
+<br><br>
+Örnek<br><br>
+var harfler = "abcde";<br><br>
+var uzunluk = harfler.length;<br><br>
+<br><br>
+Özel Karakterler<br><br>
+Yukarıda bahsedildiği gibi bir stringe atadığınız değer içinde " veya ' gibi özel karakterler varsa bu JavaScript tarafından yanlış anlaşılabilir.<br><br>
+
+Bildiğiniz gibi JavaScript'de  " ve '  karakterleri string değişkene veri atarken kullanılan karakterlerdir.<br><br>
+
+Bu tür bir sorun ile karşılaşmamak için eğer metnin içinde " veya ' karakterleri varsa başına \ karakteri koyarak bunun metnin bir parçası olduğunu JavaScript'e bildiririz.
+<br><br>
+\ karakteri JavaScript'te Kaçış Karakteri olarak adlandırılır.
+
+<br><br>
+ 
+Örnek
+<h2>JavaScript Kaçış işareti</h2>
+<p id="ornek"></p>
+<br><br>
+<script>
+var hikaye ="Kurt kırmızı başlıklı kıza:\"Nereye gidiyorsun? Küçük kız \" demiş";
+document.getElementById('ornek').innerHTML = hikaye;
+</script>
+<br><br>
+\ kaçış karakteri<br><br>
+
+Metinde tek tırnak varsa: \'<br><br>
+Metinde çift tırnak varsa \"<br><br>
+Metinde ters eğik çizgi varsa \\<br><br>
+şeklinde kullanılabilir.<br><br>
+
+ 
+<br><br>
+JavaScript ile kod yazarken kod satırınızın çok uzun olmamasına dikkat edin.<br><br>
+
+Uzun satırlar zor okunur bu sebepten bir satırı en fazla 80 karakter uzunluğunda bırakın.
+<br><br>
+
+ 
+Özellikle string değişkene değer atarken çok uzun bir metin kullanıyorsanız, bunu tek parça yapmak yerine + operatörü ile parçalı şekilde birleştirerek yapın.
+                 <br><br>
+                 
+                 
+                 JavaScript String Metodları<br><br><br><br>
+String metodları, string türü veriler üzerinde işlem yaparken faydalandığımız metodlardır.
+<br><br>
+Normalde String ilkel bir türdür ve ilke türlerde özellik ve metodlar olmaz. Nesnelerin özellikleri ve metodları olur.
+<br><br>
+Fakat JavaScript ilkel değerler için de metod ve özelliklere sahiptir. Çünkü JavaScript ilkel değerleri işlerken bunlara nesne gibi davranır.
+<br><br>
+String Length (string uzunluğu)<br><br>
+length özelliği stringin uzunluğunu verir (karakter sayısını, boşluklarda dahil olmak üzere).
+<br><br>
+Örnek<br><br>
+var site = "uzmanimakademi";<br><br>
+var uzunluk = site.length;<br><br>
+<br><br>
+JavaScript String indexOf() ve lastIndexOf() Metodu
+Bir string içindeki bir karakterin ya da metnin bir parçasının sıra numarasını (index) bulmak için indexOf metodu kullanılır.
+<br><br>
+indexOf metodu kendine verilen karakteri ya da kelimeyi metnin içinde arar ve bulduğu ilk değerin sıra numarasını verir.
+
+<br><br>
+ 
+Sıra numarası yani index string işlemlerinde çokca kullanılan bir özelliktir.
+<br><br>
+Örnek<br><br>
+var metin = "uzmanim akademi JavaScript için uzmanim akademi ";<br><br><br><br>
+var akademiIlkIndeks = metin.indexOff("akademi");<br><br>
+
+
+ <br><br>
+lastIndexOf metodu kendine verilen karakteri ya da kelimeyi metnin içinde arar ve bulduğu son değerin sıra numarasını verir.
+<br><br>
+Örnek<br><br>
+var metin = "uzmanim akademi JavaScript için uzmanim akademi ";<br><br><br><br>
+var akademiSonIndeks = metin.lastIndexOff("akademi");<br><br>
+
+<br><br>
+ 
+indexOf ve  lastIndexOf metodu, kendine verilen değeri metin içinde bulamazsa geriye -1  döndürür.<br><br><br><br>
+
+Bunun anlamı değer bulunamadı demektir.<br><br>
+<br><br>
+Bunu unutmayın!
+<br><br>
+JavaScript saymaya 0'dan başlar.
+<br><br>
+Indeks numarasıda verilirken hesaplamaya sıfırdan başlanır. Yani birinci sıradaki karakterin index numarası 0'dır.
+<br><br>
+Her iki metod içinde aramamaya başlanılacak başlangıç numarası verilebilir.
+<br><br>
+
+ 
+Yani diyebilirsinizki "aramaya 10. karakterden sonra başla".
+<br><br>
+Bunu metoda ikinci bir parametre vererek yaparız.
+<br><br>
+Örnek<br><br>
+var metin = "uzmanim akademi JavaScript için uzmanim akademi";
+var indeks = metin.indexOf("uzmanim",20);
+<br><br>
+Metnin içinde kelime aramak için ayrıca search() metodu vardır. Bu metod indexOf ile aynı çalışır ama search() metodu çok daha güçlüdür.
+<br><br>
+Çok daha fazla parametre alır. Daha fazla seçeneğe sahiptir.
+<br><br>
+String'i parçalara ayırma
+JavaScript ile çoğu zaman metinler üzerinde işlemler yaparız.
+<br><br>
+Bazen bir metnin içinde kelime arar bazen de metnin içinden belirli bir bölümü çıkartmak isteriz.
+<br><br>
+
+ 
+JavaScript bu tür metin işlemleri için bize 3 metod sunar:
+<br><br>
+slice(başlangıç, bitiş)
+substring(başlangıç, bitiş)
+substr(başlangıç, bitiş)
+Bu metodlar ile metinler üzerinde ayrıştırma işlemleri gerçekleştirilir.
+<br><br>
+JavaScript string slice() Metodu
+slice() metodu string içinden belirli bir bölümü çıkartmaya yarar.
+<br><br>
+JavaScript string slice() metodu iki parametre alır: ilk parametre başlama indeksi, ikinci parametre bitiş indeksidir.
+<br><br>
+Bu iki indeks numarası arasındaki bölüm metnin içinden çıkartılır ve yeni bir string değer olarak döndürülür:
+<br><br>
+Örnek<br><br>
+var str = "Kavun, Karpuz, Kiraz, Erik";<br><br>
+var sonuc = str.slice(15,20);<br><br>
+
+//sonuc = Kiraz
+
+<br><br>
+ 
+Eğer parametre değerlerini negatif verirseniz o zaman parçalama işlemi metnin sonundan başlayacaktır.
+<br><br>
+Aşağıdaki örnekte, işlem sağdan sola 11 karakter ilerleyecek ve kesmeye başlayacaktır. 
+<br><br>
+Kesme işlemi yine sağdan indeksi 6 olan karaktere kadar devam edecek ve iki indeks arasında kalan metin alınacaktır.
+<br><br>
+Örnek<br><br>
+var str = "Kavun, Karpuz, Kiraz, Erik";<br><br>
+var sonuc = str.slice(-11,-6);<br><br>
+
+// sonuc = Kiraz<br><br>
+
+JavaScript string substring() Metodu<br><br>
+substring() bir önceki yöntem olan slice() ile benzerdir.<br><br>
+
+İki metod arasındaki fark substring() metodu negatif değer almaz.
+<br><br>
+Örnek<br><br>
+var str = "Kavun, Karpuz, Kiraz, Erik";<br><br>
+var sonuc = str.substring(7,13);
+<br><br>
+//sonuc = Karpuz<br><br>
+
+
+ 
+Eğer ilk parametreyi atlarsanız, parametreyi başlangıç indeksi olarak alacaktır.
+<br><br>
+JavaScript string substr() Metodu
+substr() metodu slice() metodu ile benzerdir.
+<br><br>
+İkisi arasındaki fark, substr() metodunun ikinci alacağı parametre çıkartılacak metnin uzunluğunu belirtir.
+<br><br>
+Örnek<br><br>
+var str = "Kavun, Karpuz, Kiraz, Erik";<br><br>
+var sonuc = str.substr(7,6);<br><br>
+
+Eğer ilk parametre negatif olursa, başlama pozisyonu metnin sonundan hesaplanır.
+<br><br>
+İkinci parametre negatif olamaz.
+<br><br>
+İkinci parametre atlanırsa, başlangıç indeksinden sonraki tüm metin alınır.<br><br>
+
+JavaScript String replace() Metodu<br><br>
+replace() metodu ile bir metnin içinde arama yapıp, bulduğumuz değerleri yine istediğimiz bir değer ile değiştirebiliriz.
+<br><br>
+Varsayılan olarak JavaScript string replace() metodu, sadece ilk bulduğu değeri değiştirir.
+<br><br>
+Örnek<br><br>
+var str = "uzmanim.net'i ziyaret edin"; <br><br>
+var yeni = str.replace("uzmanim.net","uzmanimakademi.net");
+<br><br>
+
+ 
+Yukarıdaki örnekte "uzmanim.net" değeri "uzmanimakademi.net" ile değiştirilecektir.
+<br><br>
+Eğer metnin içinde birden fazla "uzmanim.net" varsa ve tümünü değiştirmek istersek o zaman regular expression yani düzenli ifadelerden yararlanmamız lazım.
+<br><br>
+regular expression ile ilgili detaylı bilgi sonra verilecektir:
+<br><br>
+Örnek<br><br>
+var str = "uzmanim.net: Lütfen uzmanim.net'i ziyaret edin!"; <br><br>
+var degistirilmis = <br><br>str.replace(/uzmanim.net/g,"uzmanimakademi.net");<br><br>
+
+JavaScript ile Metni Büyük Harf veya Küçük Harfe Çevirme (toUpperCase() ve toLowerCase() metodu)
+Eğer bir metni tamamen büyük harfe çevirmek isterseniz JavaScript string toUpperCase() metodunu kullanabilirsiniz.
+<br><br>
+Örnek<br><br>
+var str = "uzmanimakademi.net"; 
+var buyuk = str.toUpperCase();<br><br>
+
+Eğer bir metni tamamen küçük harfe çevirmek isterseniz JavaScript string toLowerCase() metodunu kullanabilirsiniz:
+<br><br>
+Örnek
+var str = "UzmanimAkademi.NET"; 
+var kucuk = str.toLowerCase();
+<br><br>
+JavaScript String concat() Metodu
+concat() metodu iki veya daha fazla stringi birleştirmeye yarar.
+<br><br>
+Daha önceden string birleştirme için + operatörünü kullanmıştık. concat() de aynı işlevi görür.
+<br><br>
+Örnek<br><br>
+var metin1 = "uzmanim";<br><br>
+var metin2 = "akademi";<br><br>
+var metin3 = metin1.concat(" ", metin2);<br><br>
+
+JavaScript String split() Metodu<br><br>
+Elinizde bir ayırıcı ile ayrılmış veri varsa bunu parçalara bölmek, bir diziye aktarmak isteyebilirsiniz.<br><br>
+
+Örneğin mart, nisan, mayıs şeklinde virgül ile ayrılmış verimiz olsun.
+<br><br>
+JavaScript string split() metonu ile bu veriyi ayrıştırmak ve ayları bir diziye yerleştirmek mümkündür.
+<br><br>
+Örnek<br><br>
+var aylar = "mart, nisan, mayıs";<br><br>
+var ayDizi = aylar.split(",");<br><br>
+<br><br>
+Bu şekilde belirli bir ayıraç ile gelen veriyi kolayca parçayalabilir, daha düzenli veri elde edebiliriz.
+                 <br><br>
+                 
+                 JavaScript Sayılar
+<br><br>
+ 
+Farklı programlama dillerinde farklı sayı türleri vardır. Örneğin C# dilinde int, int16, decimal gibi farklı türler vardır.
+<br><br>
+16 gibi bir sayıyı tutmak için int türü yeterli olurken, 3.15 gibi küsurlu değerleri tutmak için decimal kullanılır.
+<br><br>
+JavaScript programlama dilinde tek bir sayı türü vardır.
+<br><br>
+Örnek<br><br>
+var adet = 15; // tam sayı<br><br>
+var fiyat = 3.99; // Küsurlu sayılar. Para gibi.
+<br><br>
+ 
+Çok büyük veya çok küçük sayılar bilimsel gösterim ile yazılabilir:
+<br><br>
+Örnek<br><br>
+var sayi1 = 321e5;    // 32100000<br><br>
+var sayi2 = 312e-5;   // 0.00321<br><br>
+JavaScript diğer programlama dillerinden farklı olarak, int, short, long gibi farklı sayı türleri tanımlamaz.<br><br>
+
+JavaScript sayıları her zaman 64-bit Floating Point (kayan nokta) olarak tutar.<br><br>
+
+JavaScript NaN Nedir? (Not a Number / Bir Sayı Değil)
+NaN kelimesi JavaScript için ayrılmış bir kelimedir. Bir matematiksel işlemde sayı olmayan bir değer kullandığınızda
+<br><br>
+sonuç NaN döner. Örneğin 100 / "armut" işleminin sonucu NaN'dır.
+
+<br><br>
+ 
+Örnek<br><br>
+var sonuc = 10 / "armut";<br><br>
+
+Fakat eğer string değer sayısal değer içeriyorsa sonuç sayı olur:
+
+<br><br>
+ 
+Örnek<br><br>
+var sonuc = 10 / "2"; // sonuc 5 olur<br><br>
+
+JavaScript Programlama Dilinde Sayılar Nesne Olabilir
+Daha önce stringde gördüğümüz gibi sayılar nesne olarak tanımlanabilir.
+<br><br>
+Normalde JavaScript sayıları ilkel değerlere sahiptir: 1,255, 5678 gibi.<br><br>
+
+Fakat var sayiNesne= new Number(123); şeklinde nesne olarak tanımlanabilir.
+<br><br>
+Bu şekilde tanımlamak JavaScript'i yavaşlatır. O sebepten gerçekten ne yaptığınızı bilmiyoranız kullanmayın. 
+<br><br>
+
+                 
+                 
+                 
+                 
+                 
+            </p>
+             
+            
+                
+        </main>
+           
+           
+            <footer>
+                <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+            </footer>
+    
+</body>
+
+</html>
+
+
+

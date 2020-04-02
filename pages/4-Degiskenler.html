@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>Olaylar (Events</h3> 
+    
+            <div id="sekmeler">
+
+                    <a href="1-Anasayfa.html">Anasayfa</a>
+                    <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                    <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                    <a href="4-Degiskenler.html">Değişkenler</a>
+                    <a href="5-Operatörler.html">Operatörler</a>
+                    <a href="6-Aritmetik.html">Aritmetik</a>
+                    <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                    <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                    <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                    <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                    <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                    <a href="12-Döngüler.html">Döngüler</a>
+                    <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                    <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+
+
+                </div>
+        </header>
+        <main>
+
+
+
+ <p id="ortayer">
+              
+               <bold>JavaScript Değişkenler</bold>
+               
+             
+Herhangi bir programlama dilinde değişkenler verileri saklamak için kullanılan yapılardır. Veriler bilgisayarın belleğinde saklanır.
+<br><br>
+Değişken (Variable) nedir?
+<br><br>
+Programlama dillerinde sıkça verileri bellek yani ramde saklamamız gerekir. Ram işlem yapmak için son derece hızlı bir donanımdır.
+<br><br>
+Bilgisayar belleğini içinde milyonlarca çekmece bulunan bir dolaba benzetebilirsiniz. Bellek, filmlerde gördüğünüz bankalarda üzerinde numaralar olan saklama kasaları gibidir.
+<br><br>
+Biz bu kasalara isim vererek içinde veri sakayabiliriz. Saklanan veri 10,20, 30 gibi sayı olduğu gibi "uzmanim", "akademi" gibi kelime ve metinlerde olabilir.
+<br><br>
+Basitçe, bellek içindeki bir alanın adlandırılmasına ve sizin için ayrılmasına değişken tanımlamak denir. Kasaya verdiğiniz, yani bellek alanına verdiğiniz ad ise değişken olarak adlandırılır. Kasa içinde sakladığınız değerse veri olarak adlandırılır.
+<br><br>
+Aşağıdaki örnekte sayi1, sayi2 ve toplam birer değişkendir. <br><br>
+Örnek
+<br><br><br>
+
+var sayi1 = 10;<br>
+var sayi2 = 5;<br>
+var toplam = sayi1 + sayi2; 
+               
+               <br><br><br>
+                Yukarıdaki örnekte:<br><br>    
+sayi1 adında ve içinde 10 değeri saklayan bir değişken oluşturuldu.<br><br>
+sayi2 adında ve içinde 5 değeri saklayan bir değişken oluşturuldu.<br><br>
+toplam adındaki değişken ise sayi1 ile sayi2 değişkenlerinin toplamlarını değer olarak aldı.
+ <br><br>
+ JavaScript Değişken Tanımlarken Dikkat Edilmesi Gerekenler
+JavaScript programlama dilinde değişken tanımlarken değişken adı benzersiz olmalıdır.
+<br><br>
+Yani örneğin bir metod içinde toplam adında bir değişken tanımladıysanız bu adı ikinci kez kullanamazsınız.
+<br><br>
+Bu benzersiz ad tanımlayıcı (identifier) olarak adlandırılır.
+<br><br>
+Tanımlayıcı yani değişken adı a,b,c gibi kısa bir ad olabilir veya daha faza bilgi veren toplamTutar, urunAdi gibi olabilir.
+<br><br>
+Değişken adlandırırken her zaman açıklayıcı adlar vermeye dikkat edin.
+<br><br>
+JavaScript değişken tanımlarken şu kurallara dikkat edilmelidir:
+<br><br>
+Değişken adladırırken sorun yaşamamak adına Türkçe karakter kullanmayın: İıçşğü gibi. Yani ürünAdı değil, urunAdi şeklinde tanımlama.<br><br>
+Değişken adı harf, rakam, alt çizgi, dolar işareti barındırabilir.
+Değişken adları sayı ile başlayamaz. sayi1 geçerli, 1sayi geçersiz adlandırmadır.<br><br>
+Değişken adları $ ve _ ile de başlayabilir. $fiyat veya _fiyat gibi.<br><br>
+Değişken isimleri büyük-küçük harf duyarlıdır. Yani fiyat ve Fiyat aynı şey değildir.<br><br>
+Rezerve edilmiş anahtar kelimeler değişken adı olarak kullanılamaz: var, function, switch gibi
+JavaScript Atama Operatörü<br><br>
+JavaScript programlama dilinde eşittir işareti (=) atama işaretidir.<br><br>
+
+Örneğin a = a + 5; ifadesi, a değişkeninin değerine 5 ekle ve tekrardan toplam değeri a değişkenine ata anlamına gelir.<br><br>
+
+b = 10; dediğimizde b değişkenine 10 değerini atamış oluruz.<br><br>
+
+JavaScript Veri Türleri<br><br>
+JavaScript değişkenleri sayıları ve metin değerleri saklayabilir.<br><br>
+
+Metin değerler string adı ile anılır. String denildiğinde gördüğünüzde "a", "ali", "buradan çok uzakta", "1298'den sonra" gibi ifadeler aklınıza gelmelidir.<br><br>
+
+Bir değişkene 10 gibi bir sayı atayabildiğiniz gibi "uzmanim" gibi bir metin de atayabilirsiniz.<br><br>
+
+JavaScript değişkenleri pek çok veri türünü saklayabilir. Fakat şimdilik sayı ve metinlerin nasıl atanması gerektiğini göreceğiz.<br><br>
+
+JavaScript değişken atamalarında sayısal değerler doğrudan değişkene atanır: sayi = 10; gibi.<br><br>
+
+JavaScript değişken atamalarında metin değerler tırnak içinde yazılmalıdır: site = 'uzmanim akademi'; gibi<br><br>
+
+Burada tek tırnak yerine çift tırnak da kullanılabilir: site = "uzmanim akademi";<br><br>
+
+
+ 
+Örnek<br><br>
+var sayi = 10;<br>
+var site ='uzmanim akademi';<br>
+var isim= "Ali Veli";<br><br><br>
+  
+                JavaScript Değişken Tanımlama<br><br>
+Bir JavaScript değişken yaratma, değişken deklare etme, değişken tanımlama olarak da adlandırılır.<br><br>
+
+var anahtar kelimesi ile bir değişken tanımlanır:<br><br>
+
+var telefonNumarasi;<br><br>
+                
+                Değişken oluşturulduktan sonra bu değişkenin herhangi bir değeri yoktur, değer atanmamıştır.
+<br><br>
+Yani bellekte yerinizi ayırttınız ama içine herhangi bir veri yerleştirmediniz.<br><br>
+
+Değişkene değer atamak için eşittir işaretini kullanırız:<br><br>
+
+telefonNumarasi = 5444445;
+Değişken tanımlama ve değer atama işlemini aynı satırda yapmak da mümkündür:<br><br>
+var telefonNumarasi = 5444444;
+Yukarıda adıtelefonNumarasi  olan bir değişken tanımladık ve buna değer atadık.<br><br><br><br>
+Not: Değişkenleri kodun en başında tanımlamak iyi bir programlama davranışıdır.<br><br>
+
+Bir İfadede Birden Fazla Değişken Tanımlamak
+JavaScript değişkenlerini farklı ifadeler ile tanımlayabildiğimiz gibi, aynı ifade içinde birden fazla değişken tanımlamak da mümkündür.<br><br>
+
+Değişkenleri virgül ile ayırarak yan yana tanımlayabiliriz:
+
+<br><br>
+ 
+Örnek<br><br>
+var kisi = "Ali Veli", arabaAdi = "AUDI", fiyat = 300;<br><br>
+
+undefined Nedir?<br><br>
+Programlamada değişkenler genelde bir değerle birlikte tanımlanır. Ya da değişken tanımlandıktan sonra değer atanır.
+<br><br>
+Değer bazen hemen atanır bazen de bir işlemin, hesaplamanın sonunda atanır.<br><br>
+
+Tanımlanan bir değişken değer atanmadıysa undefined (belirsiz, tanımlanmamış) değerine sahip olur.<br><br>
+
+undefined ifadesi bazen hatalarda karşınıza çıkar.<br><br>
+
+Aşağıdaki örnekte arabaAdi değişkeni tanımlanıyor fakat bu değişkene değer atanmıyor.<br><br>
+
+Peki tanımlanan değişkenin değerini ekrana yazdırmak istersek ne görürüz?
+<br><br>
+Cevabı kendiniz deneyip görebilirsiniz:
+<br><br>
+
+ 
+Örnek<br><br>
+var arabaAdi;
+<br><br>
+JavaScript Değişkeni İki Defa Tanımlarsak Ne Olur?<br><br>
+Bir değişkeni iki defa tanımlarsanız, değişken değerini kaybetmez.
+<br><br>
+Aşağıdaki örnekte arabaAdi değişkeni hâlâ "Audi" değerine sahiptir.<br><br>
+
+Örnek<br><br>
+var arabaAdi = "Audi";<br><br>
+var arabaAdi;<br><br>
+
+JavaScript Matematik İşlemleri<br><br>
+JavaScript değişkenleri ile +,- gibi operatörleri kullanıp işlem yapabilirsiniz.<br><br>
+
+Örnek<br><br>
+var sonuc = 1 + 2 + 3;<br><br>
+<br><br>
+Ayrıca + operatörü ile metin ifadeleride işleyelebilirsiniz. Fakat bu durumda string ifadeler yan yana gelecektir:<br><br>
+Örnek<br><br>
+<h2>JavaScript Değişkenler</h2><br><br>
+
+<p>Öğrencinin Adı:</p>
+
+<p id="demo"></p>
+
+<script>
+var tamAd = "Ali" + " " + "Veli";
+document.getElementById("demo").innerHTML = tamAd;
+</script>
+<br><br>
+Bunu Denemelisin:
+<br><br>
+Eğer string ve sayısal ifadeler + operatörü ile işlenirse durum ne olur?
+<br><br>
+Aşağıdaki işlemi sonucu sizce ne olur?
+<br><br>
+var sonuc = "1" + 2 + 3 ;
+<br><br>
+Peki sizce şöyle bir kod nasıl sonuç verir?
+<br><br>
+var sonuc = 1 + 2 + "3" ;
+<br><br>
+Herhangi bir kendin dene editörü ile işlemleri deneyin ve JavaScript'in farklı işlemlere nasıl sonuç verdiğini görün.
+<br><br>
+
+                 
+            </p>
+             
+            
+                
+        </main>
+           
+           
+            <footer>
+                <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+            </footer>
+    
+</body>
+
+</html>
+

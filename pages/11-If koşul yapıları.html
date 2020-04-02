@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>Olaylar (Events</h3> 
+    
+            <div id="sekmeler">
+
+                    <a href="1-Anasayfa.html">Anasayfa</a>
+                    <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                    <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                    <a href="4-Degiskenler.html">Değişkenler</a>
+                    <a href="5-Operatörler.html">Operatörler</a>
+                    <a href="6-Aritmetik.html">Aritmetik</a>
+                    <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                    <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                    <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                    <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                    <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                    <a href="12-Döngüler.html">Döngüler</a>
+                    <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                    <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+
+
+                </div>
+        </header>
+        <main>
+
+
+
+ <p id="ortayer">
+              
+               <bold>JavaScript’in özellikleri</bold>
+               
+          JavaScript Koşul İfadeleri <br><br>
+Farklı durumlarda farklı işlemler yapmak gerekebilir. Bu durumların tespit edilmesi için koşul ifadeleri bize yardımcı olur.<br><br>
+
+Şartların sağlanıp sağlanılmadığını tespit ederken standart üç ifade kullanılır. Bunlar if, else if ve else'dir. Örneği inceleyelim;<br><br>
+
+ JAVASCRIPT Kodu<br><br>
+var mesaj = "";<br><br>
+
+var saat = 5;<br><br>
+
+if ( saat < 10 ) 
+{
+    mesaj = "İyi sabahlar";
+}
+else if ( saat < 20 )
+<br><br>
+{
+    mesaj = "İyi günler";
+}<br><br>
+else
+{
+    mesaj = "İyi akşamlar";
+}<br><br>
+Örnekte saat değişkeni 5 olarak belirtilmiştir. Bu değişkenin sayısal değerine göre mesaj değişkeninin şekillenmesi isteniyor. Eğer saat 10'dan küçükse "İyi sabahlar", eğer 20'den küçükse "İyi günler", hiçbiri değilse "İyi akşamlar" demesi sağlanıyor. Dikkatli incelendiğinde parantez içerisinde koşullara yer veriliyor.
+<br><br>
+if ( koşul sağlanıyorsa ) { şunları yap }<br><br>
+else if ( koşul sağlanıyorsa ) { şunları yap }<br><br>
+else { şunları yap }<br><br>
+Koşul oluştururken mutlaka IF ile başlanır. Parantez içinde koşul belirtilir ve yapılacaklar kıvrımlı parantez içinde yazılır.
+<br><br>
+ELSE IF kullanmak için öncelikle IF kullanmış olmak gereklidir. Yani IF kullanmadan ELSE IF ile bir kontrol yapılamaz. "O olmadı bari bunu dene" anlamı taşır.
+<br><br>
+ELSE kullanırken parantez açılmaz ve koşul yazılmaz. ELSE, diğer tüm if ve else ifler çalışmadıysa, yani hiçbir koşul sağlanılamadıysa yapılacak şeyi belirtir.
+<br><br>
+Koşul Operatörleri<br><br>
+
+Koşul ifadeleri mantıksal değerlerdir. Doğru (true) ya da yanlış (false) olabilirler. İki eşittir (==) bir koşul ifadesidir ve iki değişken ya da değerin denkliğini doğrulamayı sağlar. Örneğin;
+<br><br>
+ JAVASCRIPT Kodu<br><br>
+var x = 5;<br><br>
+
+var y = 6;<br><br>
+
+var sonuc = "";<br><br>
+
+if ( x == y )<br><br>
+{
+   sonuc = "Birbirine eşit";
+}<br><br>
+Şimdi bu koşul ifadelerini ve anlamlarını listeleyelim:<br><br>
+
+Karşılaştırmalar
+<br><br>
+NOT: Aşağıdaki örneklerde x'in değeri 5 alınacaktır!<br><br>
+
+İşaret	Anlamı	Koşul İfadesi	Sonuç<br><br>
+==	Birbirine eşitse	x == 8	false<br><br>
+x == 5	true<br><br>
+!=	Eşit değilse	x != 8	true<br><br>
+===	Türleri eşitse	x === "5"	false<br><br>
+x === 5	true<br><br>
+!==	Türleri eşit değilse	x !== "5"	true<br><br>
+>	Büyükse	x > 8	false<br><br>
+<	Küçükse	x < 8	true<br><br>
+>=	Büyük veya eşitse	x >= 8	false<br><br>
+<=	Küçük veya eşitse	x <= 8	true<br><br>
+Mantıksal İfadeler<br><br>
+<br><br>
+NOT: Aşağıdaki örneklerde x = 6 ve y = 3 alınacaktır!
+<br><br>
+İşaret	Anlamı	Koşul İfadesi	Sonuç
+&&	ve	x < 10 && y > 1	true
+||	veya	x == 5 || y == 5	false
+!	değilse	!(x == y)	true
+Mantıksal ifadelerden ve (&&) bağlacında her iki durum da doğru ise koşul sağlanır. Eğer veya (||) bağlacı kullanılmışsa belirtilen koşullardan sadece biri doğru olsa da önerme doğrudur.
+<br><br>
+Koşul İfadelerini Tek Satırda Kullanmak
+<br><br>
+JavaScriptte koşul ifadelerinde if kullanmak yerine tek satırda ( koşul ) ? doğruysa : yanlışsa; yapısını da kullanabiliriz. Aşağıdaki iki kullanım da aynı işi görecektir;
+<br><br>
+ JAVASCRIPT Kodu<br><br>
+var mesaj = "Yaşınız 18'den ";<br><br>
+
+if ( yas >= 18 )<br><br>
+{<br><br>
+   mesaj += "büyük!";<br><br>
+}<br><br>
+else<br><br>
+{<br><br>
+   mesaj += "küçük!";<br><br>
+}<br><br>
+ JAVASCRIPT Kodu<br><br>
+var yas = 19;<br><br>
+<br><br>
+var mesaj = "Yaşınız 18'den ";
+<br><br>
+mesaj += ( yas >= 18 ) ? "büyük!" : "küçük";
+                 <br><br>
+            </p>
+             
+            
+                
+        </main>
+           
+           
+            <footer>
+                <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+            </footer>
+    
+</body>
+
+</html>
+
+
+

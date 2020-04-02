@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>Olaylar (Events</h3> 
+    
+            <div id="sekmeler">
+
+                    <a href="1-Anasayfa.html">Anasayfa</a>
+                    <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                    <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                    <a href="4-Degiskenler.html">Değişkenler</a>
+                    <a href="5-Operatörler.html">Operatörler</a>
+                    <a href="6-Aritmetik.html">Aritmetik</a>
+                    <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                    <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                    <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                    <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                    <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                    <a href="12-Döngüler.html">Döngüler</a>
+                    <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                    <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+
+
+                </div>
+        </header>
+        <main>
+
+
+
+ <p id="ortayer">
+              
+               <bold>JavaScript’in özellikleri</bold>
+            Döngüler, bir işlemin art arda yapılması için hızlı ve kolay bir yöntem sunarlar. JavaScript Rehberi'nin bu bölümünde, JavaScript içerisinde yer alan çeşitli yineleme ifadeleri anlatılacaktır.
+<br><br>
+Döngüleri şu şekildeki basit bir bilgisayar oyunu olarak düşünebilirsiniz: Doğu yönünde 5 adım ilerle ve devamında batı yönünde 3 adım ilerleyerek hazineyi bul. Bu fikri basitçe kodlamak gerekirse:
+<br><br>
+var adım;<br><br>
+for (adım = 0; adım < 5; <br><br>adım++) {
+  // 5 defa ekrana yazıyor
+  // adım 0'dan 4'e kadar değerler alıyor.
+  console.log('Doğu yönünde bir adım atılıyor.');
+}<br><br>
+Birçok döngü türü vardır, fakat özünde hepsi aynı şeyi yaparlar: ardı ardına belirlenen bir işlemi gerçekleştirirler. Genelde gerçekleştirilen işlem adımı 0'dan başlar. Döngünün bitiş ve başlangıç noktalarının belirlenmesi için çeşitli döngü mekanizmaları mevcuttur. Bir döngünün diğer döngülere göre daha avantajlı olmasını sağlayan farklı durumlar vardır.
+<br><br>
+JavaScript'teki döngü ifadeleri aşağıdaki şekilde listelenmiştir:
+<br><br>
+for döngüsü
+do...while döngüsü
+while döngüsü
+Etiketlenmiş ifadeler
+break ifadesi
+continue ifadesi
+for...in ifadesi
+for...of ifadesi<br><br>
+for döngüsü<br><br>
+Bir for döngüsü, belirlenen koşul sağlandığı sürece içerdiği komutların çalıştırılmasını sağlar. JavaScript'teki for döngüsü, Java ve C dilindeki for döngüsü ile benzerdir. For döngüsünün söz dizimi aşağıdaki şekildedir:
+<br><br>
+for ([başlangıçAtaması]; [koşulİfadesi]; [arttırımİfadesi]) 
+  ifade
+Bir for döngüsündeki algoritmanın adımları aşağıdaki şekildedir:
+<br><br>
+Bir başlangıçAtaması ifadesi varsa çalıştırılır. Bu ifadede genellikle bir veya daha fazla döngü sayıcısına atama işlemi yapılır.<br><br> Ayrıca değişken tanımı da yapılabilir.
+koşulİfadesi çalıştırılır. Eğer koşulİfadesi değeri true ise, ifade çalıştırılabilir. Eğer koşulİfadesi değeri false ise, for döngüsünden çıkılır. Eğer koşulİfadesi boş geçilirse, değeri her zaman true olarak varsayılır ve sonsuz döngü oluşturulmuş olur.
+ifade çalıştırılır. Birden fazla ifade çalıştırılacaksa, ifadeleri gruplamak için blok ifadesi ({ ... }) kullanılır.<br><br>
+arttırımİfadesi varsa çalıştırılır ve 2 numaralı adıma geri dönülür.<br><br>
+Örnek<br><br>
+Aşağıdaki fonksiyon, scroll'lanabilen bir listedeki seçilen değerlerin sayısını sayan bir for ifadesi içerir (buradaki liste, çoklu seçimler yapabilmeye izin veren bir <select> elemanıdır) . <br><br>for ifadesinde i değişkeni tanımlanır ve sıfır değeri atanır.<br><br> i'nin değerinin, <select> elemanındaki <option> elemanlarının sayısından daha az olup olmadığı kontrol edilir, if ifadesini çalıştırılır, ve döngü her tamamlandığında i değişkeni bir arttırılır.
+<br><br>
+<form name="selectForm">
+  <p>
+    <label for="müzikTürleri">Sevdiğiniz müzik türlerini seçip aşağıdaki butona basınız:</label>
+    <select id="müzikTürleri" name="müzikTürleri" multiple="multiple">
+      <option selected="selected">Pop</option>
+      <option>Rap</option>
+      <option>Rock</option>
+      <option>Arabesk</option>
+      <option>Türk Sanat Müziği</option>
+      <option>Klasik Müzik</option>
+    </select>
+  </p>
+  <p><input id="btn" type="button" value="Kaç tanesi seçildi?" /></p>
+</form>
+<br><br>
+<script>
+function kaçTane(müzikTürleri) {
+  var seçilenMüzikSayısı = 0;
+  for (var i = 0; i < müzikTürleri.options.length; i++) {
+    if (müzikTürleri.options[i].selected) {
+      seçilenMüzikSayısı++;
+    }
+  }
+  return seçilenMüzikSayısı;
+}
+<br><br>
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function(){
+  alert('Seçilen müzik türü sayısı: ' + kaçTane(document.selectForm.müzikTürleri))
+});
+</script>
+<br><br>
+do...while döngüsü<br><br>
+do...while döngüsü, belirlenen bir koşul sağlandığı sürece döngünün çalıştırılmasına olanak tanır. Bir do...while döngüsü aşağıdaki gibidir:
+<br><br>
+do<br><br>
+  ifade<br><br>
+while (koşul);<br><br>
+koşul kontrol edilmeden hemen önce ifade çalıştırılır. Çoklu ifadelerin çalıştırılması için, blok ifadesi ({...}) kullanılarak ifadeler gruplandırılır. Eğer koşul sağlanırsa, ifade tekrar çalıştırılır. Çalıştırıldıktan sonra, koşul tekrar kontrol edilir. Eğer koşul sağlanmazsa, ifadenin çalıştırılması durdurulur ve do...while döngüsünden sonraki komutlar çalıştırılır.<br><br> koşul kontrol edilmeden hemen önce ifade çalıştırıldığı için, koşul değeri false olsa bile blok satırınız içerisindeki kodlar 1 defa çalıştırılır.
+<br><br>
+Örnek 1<br><br>
+Aşağıdaki örnekte, do döngüsü en az bir kere çalıştırılır, ve i değişkeninin değeri 5'ten küçük olduğu sürece çalıştırma devam eder:<br><br>
+
+var i = 0;<br><br>
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);<br><br>
+Örnek 2
+Aşağıdaki örnekte, do döngüsü en az bir kere çalıştırılır, ve i değişkeninin değeri 5'ten küçük olduğu sürece çalıştırma devam eder:
+<br><br><br><br>
+var i = 100;<br><br>
+var deger = false; <br><br>
+do {<br><br>
+  console.log( i );<br><br>
+} while ( deger );<br><br>
+while döngüsü<br><br>
+Bir while döngüsü, belirlenen koşul sağlandığı sürece çalıştırılmaya devam eder. Örnek bir while döngüsü aşağıdaki gibidir:
+<br><br>
+while (koşul)<br><br>
+  ifade<br><br>
+Döngü içerisindeki ifade çalıştırılmadan önce koşul kontrol edilir. Eğer koşul sağlanırsa, ifade çalıştırılır ve koşul tekrar kontrol edilir.<br><br> Eğer koşul sağlanmazsa, döngü içerisindeki ifadenin çalıştırılması durdurulur ve while döngüsünden çıkılarak sonraki komutlar çalıştırılır.
+<br><br>
+Çoklu ifadelerin çalıştırılması için, blok ifadesi ({...}) kullanılarak ifadeler gruplanır.
+<br><br>
+Örnek 1<br><br>
+Aşağıdaki while döngüsü, n değişkeni 3'ten küçük olduğu sürece çalıştırılır:<br><br>
+
+var n = 0;<br><br>
+var x = 0;<br><br>
+while (n < 3) {<br><br>
+  n++;<br><br>
+  x += n;<br><br>
+}<br><br>
+Her döngüde, n değişkeninin değeri 1 arttırılır ve x'e eklenir. Bunun sonucunda x ve n değişkenleri aşağıdaki değerleri alırlar:
+<br><br>
+İlk kez döngü çalıştırılıp tamamlandığında: n = 1 ve x = 1<br><br>
+2. kez tamamlandığında: n = 2 ve x = 3<br><br>
+3. kez tamamlandığında: n = 3 ve x = 6<br><br>
+3. kez döngü çalıştırılıp tamamlandığında, n < 3<br><br> koşulu artık true değerini almaz ve döngüden çıkılır.
+
+Örnek 2<br><br>
+Sonsuz döngülerden uzak durulmalıdır. Döngü içerisindeki koşulun, eninde sonunda false değerini alacağı emin olunmalıdır; aksi taktirde, döngü sonsuza dek çalışır. Aşağıdaki while döngüsündeki ifade sonsuza dek çalışır, çünkü koşul asla false değerini alamaz:
+<br><br>
+while (true) {<br><br>
+  console.log("Merhaba dünya");<br><br>
+}<br><br><br><br>
+Etiketlenmiş ifadeler<br><br>
+Bir etiketlenmiş ifadede , bir anahtar kelime ve bu kelimeye bağlı çalıştırılacak bir ifade bulunur.Anahtar kelime kullanılarak, program içerisindeki herhangi bir yerde, anahtar kelime ile ilişkili ifade çalıştırılabilir. <br><br>Örneğin, bir döngü, anahtar kelime ile etiketlenerek, uygulama içerisindeki herhangi bir yerden çalıştırılabilir.<br><br>
+
+Etiketlenmiş bir ifade aşağıdaki şekildedir:
+<br><br>
+etiket :<br><br>
+   çalıştırılacak_ifade<br><br>
+Etiket adı, herhangi bir değişken adının aldığı şekilde değerler alabilir. Etiket ile tanımlanan çalıştırılacak_ifade içerisinde herhangi bir komut yer alabilir.
+<br><br>
+Örnek<br><br>
+Bu örnekte, döngüyüİşaretle etiketi while döngüsünü tanımlar.
+<br><br>
+döngüyüİşaretle:<br><br>
+while (işaret == true) {
+   merhabaDünya();
+}<br><br>
+break ifadesi<br><br>
+break ifadesi kullanılarak bir döngüden, switch ifadesinden veya herhangi bir etiketlenmiş ifadeden çıkılabilir.
+<br><br>
+Etiket olmayan bir blokta break ifadesini kullandığınızda, break'i çevreleyen en içteki while, do-while, for, veya switch ifadesinden çıkılır ve koddaki sonraki komutların çalıştırılmasına devam edilir.<br><br>
+Etiket olan bir blokta break ifadesini kullanıldığında, etiketlenmiş olan ifadeden çıkılır.
+break ifadesinin söz dizimi aşağıdaki gibidir:
+<br><br>
+break [etiket];<br><br>
+Bu söz diziminin ilk ifadesi (break) ile, break'i çevreleyen en içteki döngü veya switch'ten çıkılır; ikinci ifade ([etiket]) ile belirlenen etiketten çıkılması sağlanır.
+<br><br>
+Örnek 1<br><br>
+Aşağıdaki örnekte, değer'e eşit olan dizi elemanı bulununcaya dek dizi içerisindeki elemanlar bir döngüde gezilir.
+<br><br>
+for (var i = 0; i < a.length; i++) {
+  if (a[i] == değer) {
+    break;
+  }
+}
+Örnek 2: Bir etiketten çıkma
+var x = 0;
+var z = 0;
+
+döngüdenÇıkmaEtiketi: while (true) {
+  console.log("Dıştaki döngüler: " + x);
+  x += 1;
+  z = 1;
+  while (true) {
+    console.log("İçteki döngüler: " + z);
+    z += 1;
+    if (z === 10 && x === 10) {
+      break döngüdenÇıkmaEtiketi;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+continue ifadesi
+continue ifadesi; while, do-while, for, veya etiketlenmiş ifadelere tekrar girilmesini sağlar.
+
+continue ifadesini herhangi bir etiket belirtmeden tek başına kullanırsanız, kendisini çevreleyen döngü bloğundaki sonraki ifadelerin çalıştırılmasını sonlandırır, ve sonraki iterasyon ile birlikte döngünün çalışmasına devam edilir. continue, break ifadesinin tam tersine döngüyü tamamen sonlandırmaz. Örneğin while döngüsünde, koşul kontrolüne geri döner. for döngüsünde ise arttırım-ifadesi'ne döner.
+continue ifadesi bir etiket ile kullanılırken, etiket ile tanımlı olan döngünün devam etmesini sağlar.
+continue ifadesinin söz dizimi aşağıdaki gibidir:
+
+continue [etiket];
+Örnek 1
+Aşağıdaki örnekte yer alan while döngüsündeki continue ifadesi, i'nin değeri yalnızca 3 olduğunda çalıştırılmaktadır. Böylece n, sırasıyla şu değerleri alır: 1, 3, 7, 12.
+
+var i = 0;
+var n = 0;
+while (i < 5) {
+  i++;
+  if (i == 3) {
+    continue;
+  }
+  n += i;
+}<br><br>
+Örnek 2<br><br>
+Aşağıdaki örnekte bulunan kontrolivej etiketinde yer alan ifadede, kontrolj etiketli diğer bir ifade yer almaktadır. Eğer continue ifadesi ile karşılaşılırsa, uygulama kontrolj'nin o anki döngüsünü sonlandırır ve sonraki iterasyona geçer. <br><br>Her continue ifadesi ile karşılaşıldığında, kontrolj döngüsü false değerini döndürene dek  devam eder. false döndürdüğünde, döngüden çıkılır ve döngüden sonra gelen kontrolivej ifadesinin kalan kısmı tamamlanır. kontrolivej döngüsüne tekrar girilir. i değişkeni 4'ten büyük oluncaya dek kontrolivej etiketinin çalıştırılmasına devam ettirilir.
+<br><br>
+Eğer continue ifadesi, kontrolj etiketi yerine kontrolivej etiketini içerseydi, program kontrolivej ifadesinin altındaki while döngüsünden devam edecekti.
+<br><br>
+kontrolivej:
+  while (i < 4) {
+    console.log(i);
+    i += 1;
+    kontrolj:
+      while (j > 4) {<br><br>
+        console.log(j);<br><br>
+        j -= 1;<br><br>
+        if ((j % 2) == 0) {<br><br>
+          continue kontrolj;<br><br>
+        }<br><br>
+        console.log(j + " tek sayıdır.");<br><br>
+      }<br><br>
+      console.log("i = " + i);<br><br>
+      console.log("j = " + j);<br><br>
+  }<br><br>
+for...in ifadesi<br><br>
+for...in döngüsü, bir nesnenin sayılabilir (enumerable) özelliklerinin üzerinde dolaşılmasını sağlar. Her bir özellik için JavaScript, belirlenen ifadeleri çalıştırır. Bir for...in döngüsü aşağıdaki şekilde oluşturulur:
+<br><br>
+for (değişken in nesne) {<br><br><br><br>
+  çalıştırılacak_ifadeler<br><br>
+}<br><br>
+Örnek<br><br>
+Aşağıdaki fonksiyon, bir nesne ve nesnenin adını parametre olarak alır. Sonrasında nesnenin tüm özellikleri üzerinde gezer ve nesnede bulunan özelliklerin adını ve değerini listeleyen bir string döndürür. <br><br>
+
+function özellikleriListeOlarakVer(nesne, nesnenin_adi) {<br><br>
+  var sonuç = "";<br><br>
+  for (var i in nesne) {<br><br>
+    sonuç += nesnenin_adi + "." + i + " = " + nesne[i] + "<br>";<br><br>
+  }<br><br>
+  sonuç += "<hr>";<br><br>
+  return sonuç;<br><br>
+}<br><br>
+marka ve model özelliklerini içeren bir araba nesnesi için sonuç, aşağıdaki şekilde olacaktır:
+<br><br>
+araba.marka = Tesla<br><br>
+araba.model = Model S<br><br>
+Dizilerde kullanımı<br><br>
+Array elemanlarında dolaşmak için for...in kullanımı çok cazip gözükse de for...in ifadesi, sayısal indekslere ek olarak kullanıcı tanımlı özelliklerin de isimlerini döndürür. Bu yüzden dizi üzerinde gezmek için, sayısal indeksler ile birlikte kullanılan geleneksel for döngüsü daha elverişlidir.<br><br> Çünkü örneğin bir Array nesnesinine özel bir değişken veya fonksiyon eklerseniz, for...in ifadesi dizi elemanlarının yanısıra eklediğiniz kullanıcı tanımlı özellikleri de getirir
+<br><br>
+for...of ifadesi<br><br>
+for...of ifadesi bir döngü oluşturur ve gezilebilir (iterable) nesneler (Array, Map, Set, arguments nesnesi vb.) üzerinde gezer.
+<br><br>
+for (değişken of nesne) {
+  çalıştırılacak_ifadeler
+}<br><br>
+Aşağıdaki örnekte, for...of döngüsü ve for...in döngüsü arasındaki fark gösterilmektedir. for...in döngüsü nesne değişkenlerinin isimleri üzerinde gezerken, for...of döngüsü ise değişkenlerin değerleri üzerinde gezer:
+<br><br>
+let dizi = [3, 5, 7];<br><br>
+dizi.selam = "merhaba";<br><br>
+<br><br>
+for (let i in dizi) {<br><br>
+   console.log(i); // Çıktısı: "0", "1", "2", "selam"<br><br>
+   console.log(typeof i); //string tipi<br><br>
+}<br><br>
+
+for (let i of dizi) {<br><br>
+   console.log(i); // Çıktısı: 3, 5, 7<br><br>
+   console.log(typeof i); //degiskenin sahip old. tip<br><br>
+}<br><br>
+                 
+            </p>
+             
+            
+                
+        </main>
+           
+           
+            <footer>
+                <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+            </footer>
+    
+</body>
+
+</html>
+
+

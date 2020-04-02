@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>Olaylar (Events</h3> 
+    
+            <div id="sekmeler">
+
+                    <a href="1-Anasayfa.html">Anasayfa</a>
+                    <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                    <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                    <a href="4-Degiskenler.html">Değişkenler</a>
+                    <a href="5-Operatörler.html">Operatörler</a>
+                    <a href="6-Aritmetik.html">Aritmetik</a>
+                    <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                    <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                    <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                    <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                    <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                    <a href="12-Döngüler.html">Döngüler</a>
+                    <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                    <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+
+
+                </div>
+        </header>
+        <main>
+
+
+
+ <p id="ortayer">
+              
+               <bold>JavaScript Operatörler</bold>
+               
+               <br><br>
+               Aşağıda bahsedilen operatörler daha sonraki derslerde detaylı olarak ele alınacaktır.<br><br>
+
+İlerleyen derslerde bu operatörler bolca kullanılacaktır.<br><br>
+
+var sayi1 = 5; // sayi1 değişkeni tanımla ve ona 5 değerini ata
+var sayi2 = 10; // sayi 2 değişkenini tanımla ve ona 10 değerini ata<br><br>
+var toplam = sayi1 + sayi2; // sayi1 ve sayi2 değişkenini topla, çıkan sonucu toplam değişkenine ata<br><br>
+
+
+ 
+Daha önceki derslerde gördüğümüz gibi JavaScript programlama dilinde atama operatörü eşittir işaretidir.<br><br>
+var fiyat = 100; örneğinde olduğu gibi tanımlanan değişkene değer atamak için = işareti kullanılır.<br><br>
+JavaScript programlama dilinde toplama işlemi için kullanılan operatör + işaretidir.<br><br>
+
+Örnek<br><br>
+var sayi1 = 5; <br><br>
+var sayi2 = 10; <br><br>
+var toplam = sayi1 + sayi2;<br><br>
+
+JavaScript programlama dilinde çarpma işlemi için kullanılan operatör * işaretidir.<br><br>
+
+Örnek<br><br>
+var sayi1 = 5;<br><br>
+var sayi2 = 10;<br><br>
+var toplam = sayi1 * sayi2;<br><br>
+
+JavaScript Matematiksel Operatörler<br><br>
+Matematiksel operatörler toplama, çıkartma vb. gibi matematik işlemlerinde kullanılan operatörlerdir.<br><br>
+
+
+ 
+Operatör	Açıklama<br><br>
++	Toplama<br><br>
+-	Çıkartma<br><br>
+*	Çarpma<br><br>
+/	Bölme<br><br>
+%	Modül<br><br>
+++	Artırma<br><br>
+--	Azaltma<br><br>
+JavaScript Atama Operatörleri<br><br>
+Atama operatörleri, bir değeri değişkene atamaya yarar.<br><br>
+<br><br>
+Operatör	Örnek	Bununla Aynı<br><br>
+=	x = y	x = y<br><br>
++=	x += y	x = x + y<br><br>
+-=	x -= y	x = x - y<br><br>
+*=	x *= y	x = x * y<br><br>
+/=	x /= y	x = x / y<br><br>
+%=	x %= y	x = x % y<br><br>
+ <br><br>
+sayi += 10; sayı değişkeninin değerine 10 ekle anlamına gelir.<br><br>
+Örnek<br><br>
+var sayi = 10;<br><br>
+sayi += 5; // 10 değerine 5 eklenecek ve değer 15 olacaktır.
+<br><br>
+JavaScript String Operatörleri<br><br>
++ operatörü aynı zamanda string birleştirme işlemlerinde kullanılır. String birleştirme iki veya daha fazla string değerin yan yana getirilmesidir.<br><br>
+
+
+ 
+var metin1 = "uzmanim";<br><br>
+var metin 2 = "akademi";<br><br>
+var site = metin1 + " " + metin2; //site değişkeninin değeri uzmanim akademi olacaktır<br><br>
++ operatörü ile string birleştirme yapılırken, metinler arasına boşluk bırakmak için " " yapabilirsiniz.
+JavaScript String ile Sayısal Değeri Birleştirme
+İki sayıyı + operatörü ile işlerseniz sonuç yine sayı olarak döner. Fakat bir sayı ile string ifadeyi + operatörü ile işlerseniz sonuç string döner.
+<br><br>
+Örnek
+x = 10 + 10; //sonuc 20
+y = "5" + 5; //sonuc "55"
+z = "Merhaba" + 5; //sonuc Merhaba5
+<br><br>
+ 
+JavaScript Karşılaştırma Operatörleri
+Operatör	Açıklama
+==	Eşittir
+===	Eşit değer ve eşit tür
+!=	Eşit değildir
+!==	Eşit değer değildir ve eşit tür değildir
+>	Büyüktür
+<	Küçüktür
+>=	Büyük eşit
+<=	Küçük eşit
+?	Koşullu (genellikle kısa if yazımında kullanılır)
+JavaScript Mantıksal Operatörler
+ 
+
+Operatör	Açıklama
+&&	Mantıksal Ve
+||	Mantıksal Veya
+!	Mantıksal Tersleme
+             
+                 
+            </p>
+             
+            
+                
+        </main>
+           
+           
+            <footer>
+                <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+            </footer>
+    
+</body>
+
+</html>
+

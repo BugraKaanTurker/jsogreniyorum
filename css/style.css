@@ -1,0 +1,108 @@
+h1 {
+    padding-left:  1%;
+    background-color: black ;
+    font-size: 36px;
+    color: aliceblue;
+    
+  
+}
+h3{
+    color: white;
+    padding-left: 40%;
+    font-size: 24px;
+    
+}
+
+#yukari {
+    padding: 2px ;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+}
+
+body {
+    background-color: #333;
+    color: blanchedalmond;
+}
+
+p {
+    color: blanchedalmond;
+    
+    
+}
+
+#ortayer:first-letter{
+    font-size: 48px;
+    
+}
+
+main{
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+    
+}
+
+#sekmeler{
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+    font-size: 26px;
+}
+#sekmeler a{
+    font-style: oblique;
+    font-size: 22px;
+    color:chartreuse;
+
+}
+aside{
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+    
+}
+
+#ortayer{
+    
+    padding-left: 10px;
+    color: wheat;
+    
+}
+
+footer{
+    background-color: #222;
+   border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+}
+
+aside{
+    width: 7% !important;
+}
+
+a{
+    background-color: #222;
+    border-radius: 5px;
+    word-spacing: normal;
+}
+li{
+    color: wheat;
+}
+
+footer{
+    padding: 5px;
+    
+}
+pre{
+    color: blanchedalmond;
+}
+
+
+
+
+
+
+
+

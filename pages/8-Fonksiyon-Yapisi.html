@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>Olaylar (Events</h3> 
+    
+            <div id="sekmeler">
+
+                    <a href="1-Anasayfa.html">Anasayfa</a>
+                    <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                    <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                    <a href="4-Degiskenler.html">Değişkenler</a>
+                    <a href="5-Operatörler.html">Operatörler</a>
+                    <a href="6-Aritmetik.html">Aritmetik</a>
+                    <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                    <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                    <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                    <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                    <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                    <a href="12-Döngüler.html">Döngüler</a>
+                    <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                    <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+
+
+                </div>
+        </header>
+        <main>
+
+
+
+ <p id="ortayer">
+              
+               <bold>Javascript Fonksiyon</bold>
+               
+             Javascript Fonksiyon
+<br><br>
+ 
+Bir JavaScript fonksiyonu, özel bir işlemi yerine getirmek için tasarlanmış bir blok koddur.
+<br><br>
+Bir JavaScript fonksiyonu farklı bir kod tarafından çağrıldığı zaman çalışır.
+<br><br>
+Örnek<br><br>
+function toplama(sayi1, sayi2) {<br><br>
+    return sayi1 + sayi2;<br><br>
+}<br><br>
+
+
+ 
+JavaScript Fonksiyon Sözdizimi<br><br>
+Bir JavaScript fonksiyonu oluşturmak için function anahtar kelimesini kullanırız. Daha sonra bu fonksiyona bir ad veririz.
+<br><br>
+Fonksiyona ad verildikten, parentez açıp kapatılır () ve en sonunda {} parantezleri arasına fonksiyon çağrıldığında çalışacak kod blogunu yazarız.<br><br>
+
+Fonksiyon adı harf, sayı, alt çizgi ve dolar işaretini barındırabilir.<br><br>
+
+Fonksiyon eğer parametre alıyorsa fonksiyon adından sonra () parantezleri arasına parametreler girilir: (parametre1, parametre2)<br><br>
+
+
+ 
+Örnek<br><br>
+function fonksiyonAdi(parametre1, parametre2)<br><br>
+{<br><br>
+//fonksiyon çağrıldığında çalıştırılacak kod bloğu<br><br>
+}<br><br>
+Fonksiyon parametreleri, fonksiyon çağrıldığında gönderilecek ve fonksiyon tarafından işlenecek verilerdir.<br><br>
+
+Örneğin, fonksiyona gönderilen iki sayıyı toplayacak bir fonksiyon yazmak istiyorsak, gönderilecek değerler için fonksiyona parametre ekleriz.<br><br>
+
+Fonksiyon bu parametrelere atanan değerleri alır ve kod bloğu içinde bunları işler.<br><br>
+
+Fonksiyon parametreleri {} içinde yerel değişkenler gibi kullanılır.<br><br>
+
+JavaScript Fonksiyonunu Çalıştırmak / Çağırmak
+Oluşturulan JavaScript fonksiyonu özel bir şekilde tanımlanmadıysa kendi başına çalışmaz. Fonksiyonu çalıştırmak için onu çağırmanız gerekir.<br><br>
+
+Bir Fonksiyon şu durumlarda çalışır:<br><br>
+
+Bir olay tetiklendiğinde fonksiyon çalıştırılabilir (örneğin kullanıcının bir butona tıklaması bir olaydır)
+Başka bir JavaScript kodu tarafından fonksiyon çalıştırılabilir.<br><br>
+Otomatik olarak / kendi kendini  çağırarak
+JavaScript Fonksiyonu ile Değer Döndürmek
+Bir JavaScript fonksiyonu kendine verilen görevi yerine getirdikten sonra değer döndürebilir.<br><br>
+
+Bazı fonksiyonlar içindeki kod blogunu işler ve görevi sona erer. 
+<br><br>
+Bazı fonksiyonlar da kod blogunu işler ve bu işlemin donunda çağrıldığı noktaya bir değer döndürür.
+
+<br><br>
+ 
+Örnek<br><br>
+var sonuc = carpma(4, 3);        // Fonksiyon çağrılıyor ve dönen değer sonuc değişkenine atanıyor<br><br>
+
+function carpma(a, b) {<br><br>
+    return a * b;                // Fonksiyon iki sayiyi carpar ve sonucu döndürür
+}<br><br>
+
+Yukarıdaki örnekte ilk satırda sonuc adında bir değişken tanımlanıyor.
+<br><br>
+Yine aynı satırda carpma(4,3) fonksiyonu çağırılıyor / çalıştırılıyor. Bu fonksiyon iki parametre alıyor: 4,3
+<br><br>
+carpma() fonksiyonu iki sayıyı çarpacak ve çıkan sonucu yani 12 değerini sonuc değişkenine atayacaktır.
+<br><br>
+Neden Fonksiyon Kullanırız?
+Fonksiyonlar sayesinde yazdığımız kodları tekrar tekrar kullanabiliriz.
+<br><br>
+Aynı kodu tekrar yazmamız gerekmez.
+<br><br>
+Fonksiyonlar uygulamaların daha küçük parçalara bölünmesini sağlar.
+<br><br>
+Böylelikle kod daha anlaşılır hale gelir.
+<br><br>
+ 
+
+() Operatörü Fonksiyonu Çağırır
+JavaScript fonksiyonun sadece adını yazarsanız geriye fonksiyon nesnesi döner.
+<br><br>
+Fonksiyonu () simgeleri ile çağırırsanız size sonuç döner.
+
+
+ <br><br>
+Örnek
+<br><br>
+function carpma(sayi1, sayi2) {<br><br>
+    return sayi1 * sayi2;<br><br>
+}<br><br>
+document.getElementById("demo").innerHTML = carpma;<br><br>
+
+Fonksiyonlar Değişkene Doğrudan Değer Atamak İçin Kullanılabilir
+Bir fonksiyonun dönen değeri doğrudan bir değişkene atanabilir.<br><br>
+
+Bunun yanında fonksiyon string birleştirme ya da matematiksel işlemlerde doğrudan da kullanılabilir.
+<br><br>
+Örnek
+// Fonksiyonun dönen değerini bir değişkene atayabilirsiniz
+var sonuc = carpma(4,3);<br><br>
+var metin = "Bu işlemin sonucu:" + sonuc;<br><br>
+
+//Veya doğrudan yapmak istediğiniz işlemde kullanabilirsiniz
+<br><br>
+var metin = = "Bu işlemin sonucu:" + carpma(4,3);<br><br>
+            </p>
+             
+            
+                
+        </main>
+           
+           
+            <footer>
+                <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+            </footer>
+    
+</body>
+
+</html>
+
+
+
