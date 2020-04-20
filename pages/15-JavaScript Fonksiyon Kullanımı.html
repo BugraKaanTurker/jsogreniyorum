@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <header id="yukari">
+            <h1>JavaScript Temelleri</h1>
+            <h3>JavaScript Fonksiyon Kullanımı</h3>
+
+            <div id="sekmeler">
+
+                <a href="1-Anasayfa.html">Anasayfa</a>
+                <a href="2-JavaScript-Giris.html"> JavaScript Giriş</a>
+                <a href="3-JS-Syntx.html">JavaScript Yazılım (Syntax) yapısı</a>
+                <a href="4-Degiskenler.html">Değişkenler</a>
+                <a href="5-Operatörler.html">Operatörler</a>
+                <a href="6-Aritmetik.html">Aritmetik</a>
+                <a href="7-Veri-Tipleri.html">Veri Tipleri</a>
+                <a href="8-Fonksiyon-Yapisi.html"> Fonksiyon Yapısı</a>
+                <a href="9-Olaylar.html"> Olaylar (Events)</a>
+                <a href="10-Stringler-Sayılar-Dizilerve.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+                <a href="11-If koşul yapıları.html">If koşul yapıları</a>
+                <a href="12-Döngüler.html">Döngüler</a>
+                <a href="13-Tip Dönüşümleri.html">Tip Dönüşümleri</a>
+                <a href="14-Çalışma Yapısı.html">Çalışma yapısı ve genel mimarisi</a>
+                <a href="15-JavaScript Fonksiyon Kullanımı.html">JavaScript Fonksiyon Kullanımı</a>
+                <a href="16-JavaScript Object Modeli.html">JavaScript Object Modeli</a>
+                <a href="17-JavaScript DOM Kullanımı.html">JavaScript DOM Kullanımı</a>
+                <a href="Hafta2 Ornekler.html">Hafta2 Ornekler</a>
+
+
+            </div>
+        </header>
+        <main>
+
+
+
+            <p id="ortayer">
+
+                <bold>JavaScript Fonksiyon Kullanımı</bold>
+
+                <h2><strong>Javascript'te Fonksiyonlar Nasıl Kullanılır?</strong></h2>
+                <p>Fonksiyonlar belirli bir görevi yerine getirmek için tasarlanmış kod bloklarıdır. Hazırlanan fonksiyonlar çağrıldığında yürütülerek istenen görev gerçekleştirilir.</p>
+                <pre>
+        <code>
+                    function fonk1(s1, s2) {
+                        return s1 * s2;
+                    }
+        </code>
+    </pre>
+                <p>Fonksiyoların temel yapısı yukarıdaki gibidir. &#8220;<b>function</b>&#8221; anahtar kelimesi ile başlar. Daha sonra fonksiyona bir <b>isim</b> verilir. Yukarıdaki fonksiyonda <b>fonk1</b> ismi verilmiştir.</p>
+                <p>Fonksiyonları yapacağı işe göre isimlendirmek kolaylık sağlayacaktır. Fonksiyon ismi verildikten sonra &#8220;<b>( )</b>&#8221; parantez açılır.</p>
+                <p>Parantezler virgüllerle ayrılmış parametre adlarını içerebilir:<br />
+                    <b>(parametre1, parametre2, &#8230;) </b></p>
+                <p>Parametreler fonksiyon çağrıldığında fonksiyon tarafından alınan değerlerdir. Alınan bu değerler değişkenler gibi davranır ve fonksiyon içerisinde bu şekilde davranır.</p>
+                <p><b>{ }</b> süslü parantezler içindeki kısım fonksiyonun çalıştıracağı kodlardır. Bu kodlar fonksiyon çağrıldığında çalışacaktır. Fonksiyonun çağrılması;</p>
+                <p><b>Bir olay meydana geldiğinde (kullanıcı bir düğmeyi tıklattığında),</b><br />
+                    <b>JavaScript kodundan çağrıldığında,</b><br />
+                    <b>Otomatik olarak (kendiliğinden)</b> olabilmektedir.</p>
+                <p>Fonksiyonda kullanılan <b>return</b> ifadesi fonksiyonun geri döndüreceği değer için kullanılır. <b>return</b> ifadesine ulaşıldığında fonksiyon duracaktır.</p>
+                <p>Yukarıda <b>fonk1</b> ismiyle oluşturduğumuz fonksiyonu incelediğimizde dışarıdan 2 adet parametre aldığını görmekteyiz (<b>s1,s2</b>).</p>
+                <p>ve alınan bu iki değerinin çarpımının geriye döndürüldüğünü görüyoruz.</p>
+                <p>Şimdide oluşturduğumuz bu <b>fonksiyonu</b> nasıl çağırabileceğimize bakalım.</p>
+                <h2><strong>Niçin Fonksiyon Kullanılır?</strong></h2>
+                <p>Yukarıda fonksiyon kullanımını en basit haliyle gördük. Fonksiyon kullanmaktaki amaç fonksiyon içerisine yazdığımız kodları defalarca kullanabilecek olmamızdır. Biraz daha açalım.</p>
+                <p><b>Örneğin</b> Kombinasyon hesaplamak için gerekli formülü biliyoruz. Biz bu işlemi fonksiyon kullanmadan yapan bir sayfa oluşturacaksak yani kullanıcıdan &#8220;n&#8221; ve &#8220;r&#8221; değerini alıp sonucu hesaplayacaksak 3 defa faktoriyel hesabı
+                    yapmamız gerekecektir.
+                </p>
+                <p><b>(n!, r! ve (n-r)! )</b></p>
+                <p>Fakat biz faktoriyel alma işini bir <b>fonksiyona</b> yaptırırsak sadece kullanıcıdan aldığımız bu değerleri fonksiyona yollamamız yeterli olacaktır.</p>
+
+            </p>
+
+
+
+        </main>
+
+
+        <footer>
+            <p>Buğra Kaan Türker. Cumhuriyet Üniversitesi/Bilhisyar Mühendisliği Öğrencisi.</p>
+        </footer>
+
+</body>
+
+</html>
